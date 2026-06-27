@@ -3,6 +3,7 @@ alert ('You can open the console by pressing Ctrl + Shift + K to open the Web Co
 function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 function getPlayerGuess() {
   const input = prompt("Enter a number between 1 and 100");
   if (input === null) {
