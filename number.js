@@ -32,7 +32,7 @@ function checkGuess(secretNumber) {
   if (guess === false) return false;
   
   if (guess === secretNumber) {
-    console.log("You win..   You seem pretty intelligent and good!!");
+    console.log("Correct guess!!");
     return true;
   }
   if (guess < secretNumber) {
@@ -60,20 +60,18 @@ function game() {
   }
   if (win) {
     console.log("You made " + counter + " guesses");
-    reactionEmojis("💯🎊🎉✨🔥");
     console.log('The random number was ' + randomNum);
   } else {
     console.log("You lose");
-     reactionEmojis('😭💔😔☹️🥲')
     console.log("The random number was " + randomNum);
     console.log(
       "YOU HAVE EXITED THE NUMBER OF AVAILABLE GUESSES, BETTER LUCK NEXT TIME",
     );
   }
   if (win == true && counter <= 3) {
-    console.log("You have 10 points.");
+    console.log("You have 10 points. Good job!");
   } else if (win === true && counter >= 4 && counter <= 6) {
-    console.log("You have 6 points.");
+    console.log("You have 6 points. ");
   } else if (win === true && counter >= 7 && counter <= 10) {
     console.log("You have 3 points.");
   } else {
