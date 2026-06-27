@@ -76,51 +76,6 @@ function game(){
 
        if (win > loss){
         console.log("You won the game!");
-        setInterval(() => {
-        const confetti = document.createElement("div");
-        confetti.textContent = "💯🎊🎉✨🔥";
-        confetti.style.position = "fixed";
-        confetti.style.left = Math.random() * 100 + "vw";
-        confetti.style.top = "-20px";
-        confetti.style.fontSize = "2rem";
-
-    document.body.appendChild(confetti);
-
-    let y = -20;
-    const fall = setInterval(() => {
-        y += 5;
-        confetti.style.top = y + "px";
-
-        if (y > window.innerHeight) {
-            clearInterval(fall);
-            confetti.remove();
-        }
-    }, 20);
-}, 200);
-    }
-    else if (win < loss){
-        console.log("You lost the game!");
-        setInterval(() => {
-        const confetti = document.createElement("div");
-        confetti.textContent = "😭💔😔☹️🥲☹️";
-        confetti.style.position = "fixed";
-        confetti.style.left = Math.random() * 100 + "vw";
-        confetti.style.top = "-20px";
-        confetti.style.fontSize = "2rem";
-
-    document.body.appendChild(confetti);
-
-    let y = -20;
-    const fall = setInterval(() => {
-        y += 5;
-        confetti.style.top = y + "px";
-
-        if (y > window.innerHeight) {
-            clearInterval(fall);
-            confetti.remove();
-        }
-    }, 20);
-}, 200);
     }
 
     if (win === loss || (win === tie && win > loss)){
