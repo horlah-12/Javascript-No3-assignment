@@ -60,8 +60,7 @@ function game(){
     let tie = 0;
  
     for(let i = 0; i < 5; i++){
-        let playerSelection = playerPlay();
-        let result = playRound(playerSelection);
+        let result = playRound(playerSelection, computerSelection);
         console.log(result);
     
         if(result.includes("win")){
