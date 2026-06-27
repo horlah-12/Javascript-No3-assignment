@@ -18,6 +18,12 @@ function computerPlay() {
    }
 //computerPlay();
 
+function playerPlay(){
+    let input = prompt("ROCK, PAPER, or SCISSORS?");
+    let playerSelection = input.toUpperCase();
+    return playerSelection;
+}
+
 
 function playRound(playerSelection, computerSelection) {
     computerSelection = computerPlay();
@@ -54,9 +60,7 @@ function game(){
     let tie = 0;
  
     for(let i = 0; i < 5; i++){
-        let input = prompt("ROCK, PAPER, or SCISSORS?");
-        let playerSelection = input.toUpperCase();
-        
+        let playerSelection = playerPlay();
         let result = playRound(playerSelection);
         console.log(result);
     
