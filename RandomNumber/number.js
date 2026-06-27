@@ -1,3 +1,5 @@
+alert ('You can open the console by pressing Ctrl + Shift + K to open the Web Console directly and also quit the game.');
+
 function generateRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }

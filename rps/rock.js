@@ -1,3 +1,6 @@
+ alert ('You can open the console by pressing Ctrl + Shift + K to open the Web Console directly and also quit the game.');
+
+
 function computerPlay() {
     let num = Math.floor(Math.random() * 3);
    if(num == 0){
@@ -126,3 +129,4 @@ function game(){
 }
  
 game();
+
